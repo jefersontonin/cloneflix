@@ -43,6 +43,8 @@ gem 'fast_jsonapi', git: "https://github.com/Netflix/fast_jsonapi",
 branch: "dev"
 # Pesquisas dentro do Postgresql
 gem 'pg_search'
+# AWS
+gem "aws-sdk-s3"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
