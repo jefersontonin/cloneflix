@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_12_173713) do
+ActiveRecord::Schema.define(version: 2020_08_17_181937) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "fuzzystrmatch"
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 2020_08_12_173713) do
     t.boolean "highlighted", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "episode_number"
     t.index ["category_id"], name: "index_movies_on_category_id"
     t.index ["serie_id"], name: "index_movies_on_serie_id"
   end
