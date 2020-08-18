@@ -1,13 +1,12 @@
 ## Customize de acordo com os videos e thumbnails de exemplo que você subir para o seu servidor
 
 # Categories
-ror = Category.create(name: 'Ruby On Rails')
+css = Category.create(name: 'CSS')
 talks = Category.create(name: 'Talks')
-testes = Category.create(name: 'Testes')
 outros = Category.create(name: 'Outros')
 
 # Featured Movie
-movie1 = Movie.create(title: "Ruby On Rails Api do zero ao Deploy", description: "Aprenda a criar uma API completa com Ruby On Rails...", thumbnail_key: "rails-api1.png", thumbnail_cover_key: "rails-api-cover.png", video_key: "rails-api1.mp4", highlighted: true, category: ror, featured_thumbnail_key: "rails-api-featured.png")
+movie1 = Movie.create(title: "Variáveis CSS", description: "Aprenda a criar variáveis CSS", thumbnail_key: "variaveis_thumb.png", thumbnail_cover_key: "variaveis_thumb.png", video_key: "variaveis.mp4", highlighted: true, category: css, featured_thumbnail_key: "variaveis_thumb.png")
 
 # Users
 user1 = User.create(name: 'example', email: 'example@example.com', password: '123456', password_confirmation: '123456')
@@ -17,30 +16,30 @@ user4 = User.create(name: 'example4', email: 'example4@example.com', password: '
 user5 = User.create(name: 'example5', email: 'example5@example.com', password: '123456', password_confirmation: '123456')
 
 # Movies sem série
-movie2 = Movie.create(title: "Crie generators no Ruby On Rails", description: "Generators são uma maneira de você automatizar a criação de conjuntos de arquivos no seu APP (assim como o rails new, o rails generate controller, o rails generate scaffold e etc), e nesse Screencast nós vamos aprender como cria-los..", thumbnail_key: "generators.png", thumbnail_cover_key: "generators-cover.png", video_key: "generators.mp4", category: ror)
-movie3 = Movie.create(title: "Dominando o uso de Jobs no RoR - Parte 1", description: "s Jobs são uma maneira fácil de você rodar processos demorados em background (evitando lentidão na hora de responder as requisições do usuário e tornando seu sistema mais fluido).", thumbnail_key: "jobs1.png", thumbnail_cover_key: "jobs1-cover.png", video_key: "jobs1.mp4", category: ror)
-movie4 = Movie.create(title: "Dominando o uso de Jobs no RoR - Parte 2", description: "s Jobs são uma maneira fácil de você rodar processos demorados em background (evitando lentidão na hora de responder as requisições do usuário e tornando seu sistema mais fluido).", thumbnail_key: "jobs2.png", thumbnail_cover_key: "jobs2-cover.png", video_key: "jobs2.mp4", category: ror)
-movie5 = Movie.create(title: "Instalando pacotes no Rails com Yarn", description: "O Yarn é um gerenciador de pacotes javascript rápido, seguro e confiável que foi integrado no rails >= 5.1 para facilitar ainda mais a gestão das dependências. (agora você usa o Bundler para bibliotecas ruby e o Yarn para bibliotecas javascript, simples assim)", thumbnail_key: "materialize.png", thumbnail_cover_key: "materialize-cover.png", video_key: "materialize.mp4", category: ror)
+# movie2 = Movie.create(title: "Crie generators no Ruby On Rails", description: "Generators são uma maneira de você automatizar a criação de conjuntos de arquivos no seu APP (assim como o rails new, o rails generate controller, o rails generate scaffold e etc), e nesse Screencast nós vamos aprender como cria-los..", thumbnail_key: "generators.png", thumbnail_cover_key: "generators-cover.png", video_key: "generators.mp4", category: ror)
+# movie3 = Movie.create(title: "Dominando o uso de Jobs no RoR - Parte 1", description: "s Jobs são uma maneira fácil de você rodar processos demorados em background (evitando lentidão na hora de responder as requisições do usuário e tornando seu sistema mais fluido).", thumbnail_key: "jobs1.png", thumbnail_cover_key: "jobs1-cover.png", video_key: "jobs1.mp4", category: ror)
+# movie4 = Movie.create(title: "Dominando o uso de Jobs no RoR - Parte 2", description: "s Jobs são uma maneira fácil de você rodar processos demorados em background (evitando lentidão na hora de responder as requisições do usuário e tornando seu sistema mais fluido).", thumbnail_key: "jobs2.png", thumbnail_cover_key: "jobs2-cover.png", video_key: "jobs2.mp4", category: ror)
+# movie5 = Movie.create(title: "Instalando pacotes no Rails com Yarn", description: "O Yarn é um gerenciador de pacotes javascript rápido, seguro e confiável que foi integrado no rails >= 5.1 para facilitar ainda mais a gestão das dependências. (agora você usa o Bundler para bibliotecas ruby e o Yarn para bibliotecas javascript, simples assim)", thumbnail_key: "materialize.png", thumbnail_cover_key: "materialize-cover.png", video_key: "materialize.mp4", category: ror)
 
-movie5 = Movie.create(title: "Como monitorar seu APP em produção", description: "Hoje vamos falar de um tema muito interessante quando precisamos lidar com a verificação da saúde do nosso ambiente de produção: a instrumentação.", thumbnail_key: "obt18.png", thumbnail_cover_key: "obt18-cover.png", video_key: "obt18.mp4", category: outros)
-movie6 = Movie.create(title: "Desmistificando a Criação de APIs", description: "Desmistificando a Criação de APIs Desmistificando a Criação de APIs Desmistificando a Criação de APIs Desmistificando a Criação de APIs", thumbnail_key: "obt17.png", thumbnail_cover_key: "obt17-cover.png", video_key: "obt17.mp4", category: outros)
-movie7 = Movie.create(title: "Dominando o Visual Studio Code - Parte 1", description: "O Visual Studio Code é um editor de texto Open Source completo que possui integração nativa com o Git, milhares de extensões, é rápido e permite que você realize o debug facilmente do seu código.", thumbnail_key: "vscode1.png", thumbnail_cover_key: "vscode1-cover.png", video_key: "vscode1.mp4", category: outros)
-movie8 = Movie.create(title: "Dominando o Visual Studio Code - Parte 1", description: "O Visual Studio Code é um editor de texto Open Source completo que possui integração nativa com o Git, milhares de extensões, é rápido e permite que você realize o debug facilmente do seu código.", thumbnail_key: "vscode2.png", thumbnail_cover_key: "vscode2-cover.png", video_key: "vscode2.mp4", category: outros)
-movie9 = Movie.create(title: "Dominando o Visual Studio Code - Parte 1", description: "O Visual Studio Code é um editor de texto Open Source completo que possui integração nativa com o Git, milhares de extensões, é rápido e permite que você realize o debug facilmente do seu código.", thumbnail_key: "vscode3.png", thumbnail_cover_key: "vscode3-cover.png", video_key: "vscode3.mp4", category: outros)
+# movie5 = Movie.create(title: "Como monitorar seu APP em produção", description: "Hoje vamos falar de um tema muito interessante quando precisamos lidar com a verificação da saúde do nosso ambiente de produção: a instrumentação.", thumbnail_key: "obt18.png", thumbnail_cover_key: "obt18-cover.png", video_key: "obt18.mp4", category: outros)
+# movie6 = Movie.create(title: "Desmistificando a Criação de APIs", description: "Desmistificando a Criação de APIs Desmistificando a Criação de APIs Desmistificando a Criação de APIs Desmistificando a Criação de APIs", thumbnail_key: "obt17.png", thumbnail_cover_key: "obt17-cover.png", video_key: "obt17.mp4", category: outros)
+# movie7 = Movie.create(title: "Dominando o Visual Studio Code - Parte 1", description: "O Visual Studio Code é um editor de texto Open Source completo que possui integração nativa com o Git, milhares de extensões, é rápido e permite que você realize o debug facilmente do seu código.", thumbnail_key: "vscode1.png", thumbnail_cover_key: "vscode1-cover.png", video_key: "vscode1.mp4", category: outros)
+# movie8 = Movie.create(title: "Dominando o Visual Studio Code - Parte 1", description: "O Visual Studio Code é um editor de texto Open Source completo que possui integração nativa com o Git, milhares de extensões, é rápido e permite que você realize o debug facilmente do seu código.", thumbnail_key: "vscode2.png", thumbnail_cover_key: "vscode2-cover.png", video_key: "vscode2.mp4", category: outros)
+# movie9 = Movie.create(title: "Dominando o Visual Studio Code - Parte 1", description: "O Visual Studio Code é um editor de texto Open Source completo que possui integração nativa com o Git, milhares de extensões, é rápido e permite que você realize o debug facilmente do seu código.", thumbnail_key: "vscode3.png", thumbnail_cover_key: "vscode3-cover.png", video_key: "vscode3.mp4", category: outros)
 
 
 # Series
-vscode = Serie.create(title: 'Visual Studio Code', description: 'Uma série completa para você dominar um dos mais importantes editores de texto', thumbnail_key: "vscode1.png", thumbnail_cover_key: "vscode-serie-cover.png", category: outros)
-movie10 = Movie.create(title: "Dominando o Visual Studio Code - Parte 1", description: "O Visual Studio Code é um editor de texto Open Source completo que possui integração nativa com o Git, milhares de extensões, é rápido e permite que você realize o debug facilmente do seu código.", thumbnail_key: "vscode1.png", thumbnail_cover_key: "vscode1-cover.png", video_key: "vscode1.mp4", serie: vscode, episode_number: 1)
-movie11 = Movie.create(title: "Dominando o Visual Studio Code - Parte 2", description: "O Visual Studio Code é um editor de texto Open Source completo que possui integração nativa com o Git, milhares de extensões, é rápido e permite que você realize o debug facilmente do seu código.", thumbnail_key: "vscode2.png", thumbnail_cover_key: "vscode2-cover.png", video_key: "vscode2.mp4", serie: vscode, episode_number: 2)
-movie12 = Movie.create(title: "Dominando o Visual Studio Code - Parte 3", description: "O Visual Studio Code é um editor de texto Open Source completo que possui integração nativa com o Git, milhares de extensões, é rápido e permite que você realize o debug facilmente do seu código.", thumbnail_key: "vscode3.png", thumbnail_cover_key: "vscode3-cover.png", video_key: "vscode3.mp4", serie: vscode, episode_number: 3)
+programador = Serie.create(title: 'Talks sobre Programação', description: 'Conversas descontraídas sobre o mundo da programação', thumbnail_key: "fortnite_thumb.png", thumbnail_cover_key: "fortnite_thumb.png", category: talks)
+movie2 = Movie.create(title: "Briga entre Epic e Apple", description: "É justo o valor cobrado pela Apple?", thumbnail_key: "fortnite_thumb.png", thumbnail_cover_key: "fortnite_thumb.png", video_key: "fortnite.mp4", serie: programador, episode_number: 1)
+movie3 = Movie.create(title: "Iniciando em Programação", description: "Dicas importantes para iniciantes no mundo da programação", thumbnail_key: "iniciante_thumb.png", thumbnail_cover_key: "iniciante_thumb.png", video_key: "iniciante.mp4", serie: programador, episode_number: 2)
+movie4 = Movie.create(title: "A importância do Talento", description: "Será que apenas talento basta?", thumbnail_key: "talento_thumb.png", thumbnail_cover_key: "talento_thumb.png", video_key: "talento.mp4", serie: programador, episode_number: 3)
 
 # Keep Wathching
 Player.create(start_date: Time.now, user: user1, elapsed_time: 10, movie: movie1)
 Player.create(start_date: Time.now, user: user1, elapsed_time: 20, movie: movie2)
 Player.create(start_date: Time.now, user: user1, elapsed_time: 30, movie: movie3)
 Player.create(start_date: Time.now, user: user1, elapsed_time: 40, movie: movie4)
-Player.create(start_date: Time.now, user: user1, elapsed_time: 50, movie: movie5)
+# Player.create(start_date: Time.now, user: user1, elapsed_time: 50, movie: movie5)
 
 # Reviews
 Review.create(rating: 3, description: 'I have always depended on the kindness of strangers.', reviewable: movie2, user: user1)
