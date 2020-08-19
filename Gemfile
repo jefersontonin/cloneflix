@@ -44,7 +44,9 @@ branch: "dev"
 # Pesquisas dentro do Postgresql
 gem 'pg_search'
 # AWS
-gem "aws-sdk-s3"
+gem 'aws-sdk-s3'
+# Add Webpacker
+gem 'webpacker'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
