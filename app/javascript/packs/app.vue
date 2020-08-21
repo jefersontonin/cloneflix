@@ -1,22 +1,33 @@
 <template>
-  <div id="app">
-    <p>{{ message }}</p>
-  </div>
+  <v-app>
+    <h4 class="white--text">Header Component</h4>
+    <v-main>
+      <h4 class="white--text">Main Component</h4>
+    </v-main>
+    <h4 class="white--text">Footer Component</h4>
+    <v-list>
+      <v-icon>phone</v-icon>
+    </v-list>
+  </v-app>
 </template>
 
+
 <script>
+import Vuetify from 'vuetify'
 export default {
-  data: function () {
+  vuetify: new Vuetify(),
+
+  data () {
     return {
-      message: "Hello Vue! Agora foi!!"
+
     }
   }
 }
 </script>
 
-<style scoped>
-p {
-  font-size: 2em;
-  text-align: center;
-}
+
+<style>
+  #app {
+    /* background-color: #0c0c0c !important; */
+  }
 </style>
