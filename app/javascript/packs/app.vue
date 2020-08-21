@@ -5,9 +5,6 @@
       <h4 class="white--text">Main Component</h4>
     </v-main>
     <h4 class="white--text">Footer Component</h4>
-    <v-list>
-      <v-icon>phone</v-icon>
-    </v-list>
   </v-app>
 </template>
 
@@ -28,6 +25,6 @@ export default {
 
 <style>
   #app {
-    /* background-color: #0c0c0c !important; */
+    background-color: #0c0c0c !important;
   }
 </style>
